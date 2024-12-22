@@ -54,7 +54,7 @@ def poser_question_deux():
         print_pythagore("Mauvaise réponse")
         return "Faux"
     
-    def poser_question_trois():
+def poser_question_trois():
     print_pythagore("Que représente le symbole ?")
     print_pythagore("A - ")
     print_pythagore("B -")
@@ -86,6 +86,12 @@ if __name__ == '__main__':
     nombre_de_questions_posées = nombre_de_questions_posées + 1
     if (resultat == "Correct"):
         nombre_de_reponses_justes = nombre_de_reponses_justes + 1
+
+    resultat = poser_question_trois()
+    nombre_de_questions_posées = nombre_de_questions_posées + 1
+    if (resultat == "Correct"):
+        nombre_de_reponses_justes = nombre_de_reponses_justes + 1
+
 
     print_pythagore("Bravo tu as répondu correctement à " + str(nombre_de_reponses_justes) + " questions sur " + str(nombre_de_questions_posées))
 
